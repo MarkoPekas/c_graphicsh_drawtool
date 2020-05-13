@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div class="divider fullw">
+        
+    </div>
+    <div class="divider">
+        <canvas id="paintbox" onmousedown="drawEvent(event)" width="600" height="600";>
+        </canvas>
+        <button class="red" onclick="setColor(this)"></button>
+        <button class="brown" onclick="setColor(this)"></button>
+        <button class="cyan" onclick="setColor(this)"></button>
+        <button class="blue" onclick="setColor(this)"></button>
+        <button class="yellow" onclick="setColor(this)"></button>
+        <button class="black" onclick="setColor(this)"></button>
+        <button class="white" onclick="setColor(this)"></button>
+        <button class="line" onclick="toolSelect(this)">line</button>
+        <button class="circle" onclick="toolSelect(this)">circle</button>
+        <button class="rectangle" onclick="toolSelect(this)">rectangle</button>
+        <button class="constr" onclick="constrain()">lock 90 angle</button>
+        <button onclick="finalize()">finish</button>
+    </div>
+    <p id="demo"></p>
+    <div class="divider fullh">
+        <textarea id="outputcode">
+        </textarea>
+    </div>
+
+
+
+</body>
+</html>
